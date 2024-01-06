@@ -1,0 +1,62 @@
+{#include <iostream>
+#include<string> 
+using namespace std;
+class car{
+    private:
+    string factory;
+    string model;
+    float fuel_capacity;
+    int no_of_doors;
+    string color;
+    string shape;
+    public:
+  void setfactory (string f) {
+      factory=f;
+  }
+   void setmodel (string m){
+       model=m;
+   }
+   void setfuel_capacity (float f_c){
+       fuel_capacity=f_c;
+   }
+   void setno_of_doors (int no_do){
+       no_of_doors=no_do;
+   }
+   void setcolor (string c){
+       color=c;
+   }
+   void setshape (string s){
+       shape=s;
+   }
+   string getfactory (){
+       return factory;
+   }
+    string getmodel (){
+       return model;
+   }
+    float getfuel_capacity (){
+       return fuel_capacity;
+   }
+    int getno_of_doors (){
+       return no_of_doors;
+   }
+    string getcolor (){
+       return color;
+   }
+    string getshape (){
+       return shape;
+   }
+   
+};
+int main()
+{
+    car c1;
+    c1.setfactory("bmw");
+    c1.setmodel("x6");
+    c1.setfuel_capacity(83);
+    c1.setno_of_doors(4);
+    c1.setcolor("blue");
+    c1.setshape("coupe");
+    cout<<"the car specs are"<<"\n"<<"make: "<<c1.getfactory()<<"\n"<<"model: "<<c1.getmodel()<<"\n"<<"f.c.: "<<c1.getfuel_capacity()<<
+    "\n"<<"n.doors: "<<c1.getno_of_doors()<<"\n"<<"color: "<<c1.getcolor()<<"\n"<<"shape: "<<c1.getshape();
+}

@@ -1,0 +1,66 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class student{
+private:
+string student_name;
+int university_id;
+int birth_date;
+string address;
+float gpa;
+int study_level;
+public:
+void setstudent_name (string s){
+    student_name=s;
+}
+void setuniversity_id (int id){
+    university_id=id;
+}
+void setbirth_date (int b){
+    birth_date=b;
+}
+void setaddress (string ad){
+    address=ad;
+}
+void setgpa (float g){
+    gpa=g;
+}
+void setstudy_level (int sl){
+    study_level=sl;
+}
+string getstudent_name(){
+    return student_name;
+}
+int getuniversity_id(){
+    return university_id;
+}
+int getbirth_date(){
+    return birth_date;
+}
+string getaddress(){
+    return address;
+}
+float getgpa(){
+    return gpa;
+}
+int getstudy_level(){
+    return study_level;
+}
+};
+int main()
+{
+    student s1;
+    s1.setstudent_name("hazem");
+    s1.setuniversity_id(222100466);
+    s1.setbirth_date(23/4/2004);
+    s1.setaddress("new cairo");
+    s1.setgpa(3.5);
+    s1.setstudy_level(0);
+    cout<<"Name: "<<s1.getstudent_name<<"\n"
+    <<"id: "<<s1.getuniversity_id<<"\n"
+    <<"birth_date: "<<s1.getbirth_date<<"\n"
+    <<"getaddress: "<<s1.getaddress<<"\n"
+    <<"gpa: "<<s1.getgpa<<"\n"
+    <<"study_level: "<<s1.getstudy_level;
+    return 0;
+}

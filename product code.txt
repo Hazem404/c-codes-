@@ -1,0 +1,85 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class product
+{
+private:
+
+    string product_name;
+    float product_code;
+    float price;
+    string producer;
+    int discount;
+
+public:
+
+    void setproduct_name(string pn)
+    {
+        product_name=pn;
+    }
+
+    void setproduct_code(float pc)
+    {
+        product_code=pc;
+    }
+
+    void setprice(float p)
+    {
+        price=p;
+    }
+
+    void setproducer(string pr)
+    {
+        producer=pr;
+    }
+
+    void setdiscount (int d)
+    {
+        discount=d;
+    }
+
+    string getproduct_name()
+    {
+        return product_name;
+    }
+
+    float getproduct_code()
+    {
+        return product_code;
+    }
+
+    float getprice()
+    {
+        return price;
+    }
+
+    string getproducer()
+    {
+        return producer;
+    }
+
+    int getdiscount()
+    {
+        return discount;
+    }
+};
+
+int main()
+{
+    product p1;
+    p1.setproduct_name("Chips");
+    p1.setproduct_code(458916);
+    p1.setprice(10);
+    p1.setproducer("Chipsy");
+    p1.setdiscount(0);
+
+    cout << "Product name is " << p1.getproduct_name() << endl;
+    cout << "Product code is " << p1.getproduct_code() << endl;
+    cout << "Product price is " << p1.getprice() << endl;
+    cout << "Product producer is " << p1.getproducer() << endl;
+    cout << "Product discount is " << p1.getdiscount() << endl;
+
+return 0;
+
+}
